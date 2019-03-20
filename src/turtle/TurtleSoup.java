@@ -145,8 +145,8 @@ public class TurtleSoup {
     //drawPersonalArt permet de construire une figure et de la colorier
     
     public static void drawPersonalArt(Turtle turtle) {
-    	int sides = 30;
-    	int sidelength = 0;
+    	int sides = 50;
+    	//int sidelength = 6;
     	for(int n = sides; n>0; n--){
     		for(int k = 30; k>0; k -=1){
     			drawRegularPolygon(turtle, 5, k);
@@ -155,7 +155,7 @@ public class TurtleSoup {
     		for(PenColor cl : PenColor.values()){
     			turtle.color(cl);
     			drawRegularPolygon(turtle, 50, 15);
-            	turtle.forward(sidelength);
+            	//turtle.forward(sidelength);
             	turtle.turn(180.0 - calculateRegularPolygonAngle(sides));
     		}
     		
